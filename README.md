@@ -2,6 +2,7 @@
 
 
 **Overview**
+
 Nowadays there are more than 6000 spoken languages in the world.
 In fact we can't understand all of them, but we must involve with people who speak different language
 because the society is growing globally.
@@ -22,7 +23,8 @@ you don’t need to spend time to use a dictionary to translate your language.
 I am using seq2seq model which is usually usu for machine translation, speech recognition and text summarization.
 My model architecture is Encoder-Decoder with attention.
 
-Dataset : https://nlp.stanford.edu/projects/jesc/index.html
+**Dataset** : https://nlp.stanford.edu/projects/jesc/index.html
+
 this dataset is already used sentencepiece.
 
 
