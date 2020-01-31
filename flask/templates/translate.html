@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>
+    result
+</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>Result</h1>
+    <table>
+        <tr>
+            <th>
+                Input value
+            </th>
+            <th>
+                Predict value
+            </th>
+        </tr>
+        <tr>
+            <td>
+                {{lang}}
+            </td>
+            <td>
+                predict value
+            </td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
