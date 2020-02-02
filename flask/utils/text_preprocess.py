@@ -224,7 +224,6 @@ def normalize_english(english_text):
     """
     input_value = ""
 
-
     # normalize English
     english_text = english_unicode_to_ascii(english_text)
     english_text = expand_contraction(english_text)
