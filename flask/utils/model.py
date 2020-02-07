@@ -73,9 +73,8 @@ class Predict(object):
             with self.session.as_default():
                 with self.graph.as_default():
                     output_token, h, c = self.decoder.predict([target_seq] + state_en)
-            pdb.set_trace()
             sampled_token_index = np.argmax(output_token[0, -1, :])
-            sampled_char = self.japanese_tokens[sampled_token_index]
+            sampled_char = self.japanese_tokens[str(sampled_token_index)]
             decoder_sentence += ' ' + sampled_char
 
             # stop condition
@@ -83,10 +82,9 @@ class Predict(object):
                 stop_condition = True
 
             # update the target sequence
-            predict_result = np.zeros((1, cfg.MAX_OUTPUT_SIZE))
-            predict_result[0, 0] = 1.
+            target_seq = np.zeros((1, cfg.MAX_OUTPUT_SIZE))
+            target_seq[0, 0] = 1.
 
             # update states
             state_en = [h, c]
-
-        return predict_result[: -4]
+        return decoder_sentence[: -4]
