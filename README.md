@@ -73,7 +73,7 @@ In this project I used a LSTM.
   Recurrent Neural Network are type of Neural Network.
   it has memory allowing information persist.
   
-  
+  ![Untitled (3)](https://user-images.githubusercontent.com/25543738/74124555-84dd8680-4b87-11ea-8d43-0127181598d7.png)
 
   
   The loop is able to provide a previous information to next.
