@@ -62,6 +62,42 @@ In this project I used a LSTM.
   
   **LSTM**
   
+  Befor explane what is LSTM let me comparing basic neural network and RNN first.
+  
+  Let's say we use basic deep neural network
+  there are 3 hidden layers, each hidden layer has biases and weights.
+  (w1, b1), (w2, b2), (w3, b3)
+  These layers are independent of each other also they don't memorize previous output.
+
+  
+  Recurrent Neural Network are type of Neural Network.
+  it has memory allowing information persist.
+  
+  
+  ![Untitled (1)](https://user-images.githubusercontent.com/25543738/74122382-ce29d800-4b7f-11ea-835b-552d4e3ef8fc.png)
+  
+  The loop is able to provide a previous information to next.
+  RNN has same parameter for each input so it can reduce the complexity of parameter.
+  
+  But RNN has long-term dependencies problem.
+  if we have a long sentence, gap is big between target word and relevent information.
+  RNN unable to learn connect the information.
+  
+  Fortunity LSTM is able to avoid this problem.
+  
+  LSTM is similar with RNN
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 **How NMT model works**
