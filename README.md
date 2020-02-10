@@ -37,9 +37,31 @@ In this project I used a LSTM.
 
   **Embedding**
   
+  Word embedding are type of word representation that is able to convert word to vector.
+  After embedded word that have similar representation with word that have similar meaning.
+  
+  But why need a embedding?
+  
+  without embedding there are several problem to handle text data
+  
+  ・ Similarity problem
+  As I mentioned after embedded word, we will have similar representation with word that have similar meaning.
+  But without embedding we won't have a similar representation with each words.
+  Because each word would be one-hot encoding which means each word is just defferent word even though each word has similar     meaning such as "Mother" and "Father"
+  
+  ・ Size problem
+  We have number of n vocaburaly, one-hot vector will have n dimentions.
+  Let's say vocaburaly size is 1000000 one-hot vector will have 1000000 dimentions,
+  we need a enough memory and strage otherwise we can not train model.
+  Other reason is incleasing number of vocaburaly also inclease feature size vectores.
+  It means there are a lot of parameter to estimate, we need more data to estimate these parameters
+  if we build a good model.
+  
+  Word embedding able to solve those problem!
   
   
   **LSTM**
+  
 
 
 **How NMT model works**
