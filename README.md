@@ -74,7 +74,7 @@ In this project I used a LSTM.
   it has memory allowing information persist.
   
   
-  ![Untitled (1)](https://user-images.githubusercontent.com/25543738/74122382-ce29d800-4b7f-11ea-835b-552d4e3ef8fc.png)
+
   
   The loop is able to provide a previous information to next.
   RNN has same parameter for each input so it can reduce the complexity of parameter.
