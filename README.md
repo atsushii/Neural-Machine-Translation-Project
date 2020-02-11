@@ -45,11 +45,13 @@ In this project I used a LSTM.
   without embedding there are several problem to handle text data
   
   ・ Similarity problem
+
   As I mentioned after embedded word, we will have similar representation with word that have similar meaning.
   But without embedding we won't have a similar representation with each words.
   Because each word would be one-hot encoding which means each word is just defferent word even though each word has similar     meaning such as "Mother" and "Father"
   
-  ・ Size problem
+  ・ Size problem 
+
   We have number of n vocaburaly, one-hot vector will have n dimentions.
   Let's say vocaburaly size is 1000000 one-hot vector will have 1000000 dimentions,
   we need a enough memory and strage otherwise we can not train model.
@@ -63,7 +65,7 @@ In this project I used a LSTM.
   **LSTM**
   
   Befor explane what is LSTM let me comparing basic neural network and RNN first.
-  
+
   Let's say we use basic deep neural network
   there are 3 hidden layers, each hidden layer has biases and weights.
   (w1, b1), (w2, b2), (w3, b3)
