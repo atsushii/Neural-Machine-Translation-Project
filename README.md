@@ -88,6 +88,19 @@ In this project I used a LSTM.
   Fortunity LSTM is able to avoid this problem.
   
   LSTM is similar with RNN
+  It is desgned to avoid lomg-term dependencies problem.
+  SO LSTM is able to persist long term information!
+  
+  As RNN has a chain of repeating module of neural network,
+  this mudule has simple structure.
+  It is contain a single layer such as tanh
+  
+  ![Untitled (4)](https://user-images.githubusercontent.com/25543738/74288775-2678eb00-4ce2-11ea-95b5-21ce20a73821.png)
+  
+  LSTM has also same chain structure but having a different repeating module instead of containing a single layer,
+  there are able to have multiple layers.
+  
+  
   
   
   
