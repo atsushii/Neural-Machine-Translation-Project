@@ -100,11 +100,58 @@ In this project I used a LSTM.
   LSTM has also same chain structure but having a different repeating module instead of containing a single layer,
   there are able to have multiple layers.
   
+  ![Untitled (7)](https://user-images.githubusercontent.com/25543738/74302279-d19d9a80-4d0a-11ea-8f52-d2bb376fbd05.png)
   
+  these are several gates, each geates will keep an important data in sequence or throw away if it's not important.
   
+  The cell state is able to carry a relative information to next time step or even more.
+  Untill cell state is gone, information is added or removed to the cell state.
+  each gates are different neural network that will choose which information is important
+  as I mentioned each gates are different neural network so they will learn which inormation is 
+  relevent to keep or forget during training.
   
-  
-  
+   **sigmoid**
+   
+   As you see the gate contains are sigmoid functions.
+   sigmoid function of range of output is between 0 to 1.
+   It is helpful to updata or forget data the reason is any number will get 0 if multipled by 0.
+   on the other hand any number will get same number if multipled by 1 that means "try keep"
+   So neural network will learn which data is important to keep or not important to foget.
+   
+   also we have different gates inside a LSTM
+   
+   **Forget gate**
+   
+   This gate will decide what imformation will keep or throw away.
+   The information from previouse hidden state and input value are into sigmoid function.
+   output value will be between 0 to 1, if closer to 0 it going to forget, however closer to 1
+   it going to keep.
+   
+   **Input gate**
+   
+   The input gate recieves previous hidden state and input value, these value into sigmoid function.
+   Input gata will update a value that will be between 0 or 1. 0 is not important, 1 is important.
+   Also previous hidden state and input value into tahn function. this function of range of output is 
+   between -1 to 1, it can help for regulation the network.
+   after these section we multiple sigmoid output and tahn output.
+   Then result is 1 this result is going to add to cell state as a new information however old information will gone.
+   
+   **Call state**
+   
+   Cell state has pointwise multiplication and pointwise addtion.
+   After finising forget gate, there is pointwise multiplication.
+   Cell state gets value which is between 0 to 1 because this value throughed a sigmoid function.
+   if output value is closer to 0 dropping in the cell state.
+   Then after input gate there is pointwise addition which is going to update the cell state as new relevent information.
+   
+   **Output gate**
+   
+   
+   
+   
+   
+   
+   
   
   
   
