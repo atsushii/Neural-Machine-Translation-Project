@@ -120,12 +120,16 @@ In this project I used a LSTM.
    
    also we have different gates inside a LSTM
    
+   
    **Forget gate**
    
    This gate will decide what imformation will keep or throw away.
    The information from previouse hidden state and input value are into sigmoid function.
    output value will be between 0 to 1, if closer to 0 it going to forget, however closer to 1
    it going to keep.
+   
+   ft = σ(Wf * [ht-1 + xt] + bf)
+
    
    **Input gate**
    
@@ -136,6 +140,12 @@ In this project I used a LSTM.
    after these section we multiple sigmoid output and tahn output.
    Then result is 1 this result is going to add to cell state as a new information however old information will gone.
    
+   it = σ(Wi * [ht-1 + xt] + bf)
+
+   C~ = tanh(Wc * [ht-1 + xt] + bc)
+   
+   
+   
    **Call state**
    
    Cell state has pointwise multiplication and pointwise addtion.
@@ -143,6 +153,10 @@ In this project I used a LSTM.
    Cell state gets value which is between 0 to 1 because this value throughed a sigmoid function.
    if output value is closer to 0 dropping in the cell state.
    Then after input gate there is pointwise addition which is going to update the cell state as new relevent information.
+      
+   update cell state
+   
+   Ct = ft * Ct-1 + C~ * it
    
    **Output gate**
    
