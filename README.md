@@ -172,10 +172,32 @@ In this project I used a LSTM.
  **Encoder**
   
  Encoder is given source language as input.
- Input is splited by word.
- As I mentioned how LSTM works so encoder will be output hidden state and relevent information to next time step.
+ Input is splitted by word.
  
  ![Untitled (10)](https://user-images.githubusercontent.com/25543738/74473057-d02db880-4e57-11ea-9f94-2b26e65add6a.png)
+ 
+ For instance, input contains 4 word it means t = 4.
+ 
+ Each words are represented as a vector because already through the embedding layer which I already explaned.
+ Remember final state(h4, c4) contains input sequence "I have a cat"
+ So encoder is just read a each input word and store the finel state.
+ Basiclly LSTM will be generated entier sequence so we do need to keep a output from lstm
+ because I already had a sequence as a finel state, but in this projct I use it for attention mechanizm.
+ 
+ **Decoder**
+ 
+ Decoder will output a word like encoder but output will be target word.
+ 
+ e.g.
+
+ decoder input: "私は猫を飼っている"
+
+ Encoder input: "I have a cat".
+
+ Decoder needs to recognize when start a sequence and end a sequence.
+ I added START_ at the beginning of input sentence also added _END at the end of output sequence
+ 
+ 
 
  
  
