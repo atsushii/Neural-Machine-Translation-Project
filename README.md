@@ -174,7 +174,9 @@ In this project I used a LSTM.
  Encoder is given source language as input.
  Input is splited by word.
  As I mentioned how LSTM works so encoder will be output hidden state and relevent information to next time step.
- For instnce input word is "I have a dog" it means time step is 4
+ 
+ ![Untitled (10)](https://user-images.githubusercontent.com/25543738/74473057-d02db880-4e57-11ea-9f94-2b26e65add6a.png)
+
  
  
  
