@@ -100,7 +100,7 @@ In this project I used a LSTM.
   LSTM has also same chain structure but having a different repeating module instead of containing a single layer,
   there are able to have multiple layers.
   
-  ![Untitled (7)](https://user-images.githubusercontent.com/25543738/74302279-d19d9a80-4d0a-11ea-8f52-d2bb376fbd05.png)
+  ![Untitled (8)](https://user-images.githubusercontent.com/25543738/74464230-08c59600-4e48-11ea-9f40-0847a866da6f.png)
   
   these are several gates, each geates will keep an important data in sequence or throw away if it's not important.
   
