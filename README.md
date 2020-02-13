@@ -100,7 +100,7 @@ In this project I used a LSTM.
   LSTM has also same chain structure but having a different repeating module instead of containing a single layer,
   there are able to have multiple layers.
   
-  ![Untitled (8)](https://user-images.githubusercontent.com/25543738/74464230-08c59600-4e48-11ea-9f40-0847a866da6f.png)
+  ![Untitled (9)](https://user-images.githubusercontent.com/25543738/74467470-f77f8800-4e4d-11ea-80ea-8192e55f2730.png)
   
   these are several gates, each geates will keep an important data in sequence or throw away if it's not important.
   
@@ -159,6 +159,27 @@ In this project I used a LSTM.
    Ct = ft * Ct-1 + C~ * it
    
    **Output gate**
+   
+   Output gate is last part of layer, it will be decide what is the next hidden state.
+   First we put current input and previous hidden state into a sigmoid function (return 0 to 1)
+   Then cell state into the tanh function (return -1 to 1),
+   after that we multiple by output of sigmoid and output of tanh to decide what information we carry to 
+   next time step as a hidden state.
+   
+   ot = σ(Wo * [ht-1 + xt] + bo)
+   ht = ot * tanh(Ct)
+ 
+ **Encoder**
+  
+ Encoder is given source language as input.
+ Input is splited by word.
+ As I mentioned how LSTM works so encoder will be output hidden state and relevent information to next time step.
+ For instnce input word is "I have a dog" it means time step is 4
+ 
+ 
+ 
+   
+   
    
    
    
