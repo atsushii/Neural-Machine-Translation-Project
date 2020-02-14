@@ -209,7 +209,8 @@ In this project I used a LSTM.
  So decoder output is not correspond with decoder input, it is ahead by 1 timestep from decoder input.
  Loss is calculated on the predict output from each time step and errors are backpropageted to update 
  the parameter of model.
- 
+
+ Without teacher forcing the hidden state will be updated by wrong prediction it means error will not decrease.
  
  
  
