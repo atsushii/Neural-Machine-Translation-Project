@@ -186,16 +186,40 @@ In this project I used a LSTM.
  
  **Decoder**
  
- Decoder will output a word like encoder but output will be target word.
+ Decoder will generate a output sentence
  
  e.g.
 
- decoder input: "私は猫を飼っている"
+ decoder output: "私は猫を飼っている"
 
  Encoder input: "I have a cat".
 
- Decoder needs to recognize when start a sequence and end a sequence.
+ but decoder needs to recognize when start a sequence and end a sequence.
  I added START_ at the beginning of input sentence also added _END at the end of output sequence
+ 
+ 
+ ![Untitled (11)](https://user-images.githubusercontent.com/25543738/74488198-4c36f900-4e76-11ea-83da-b108e483bd97.png)
+
+ The initial state is same as final state of encoder. decoder model is trained to generate a target word
+ it is based on information from encoder.
+ After input a "start_" word into a decoder input, decoder starts to generate the next word also decoder
+ end to generate a next word when decoder predicts a "_END" word.
+ 
+ Decoder model is used teacher forcing technique. 
+ So decoder output is not correspond with decoder input, it is ahead by 1 timestep from decoder input.
+ Loss is calculated on the predict output from each time step and errors are backpropageted to update 
+ the parameter of model.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
  
  
 
