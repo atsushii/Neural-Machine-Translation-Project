@@ -213,6 +213,19 @@ In this project I used a LSTM.
  Without teacher forcing the hidden state will be updated by wrong prediction it means error will not decrease.
  
  
+ **Attention Mechanism**
+ 
+ I used Global Attention with dot-based scoring for attention mechanizm
+ [Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/pdf/1508.04025.pdf)
+ 
+ Global attention uses only encoder output and current decoder for the current timestep.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
