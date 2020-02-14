@@ -32,7 +32,7 @@ This model is created by several layers which are recurrent neural(RNN) network 
 There are defferent type of RNN, a Long Short-Term Memory(LSTM) and gated reurrent unit(GRU).
 In this project I used a LSTM.
 
-![Untitled](https://user-images.githubusercontent.com/25543738/74112094-a9693c80-4b4e-11ea-8671-f725365701a7.png)
+![Untitled (13)](https://user-images.githubusercontent.com/25543738/74544911-cdd16a00-4efc-11ea-9090-b49ff86f2ed5.png)
 
 
   **Embedding**
