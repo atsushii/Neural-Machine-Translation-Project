@@ -18,6 +18,12 @@ Users are able to chat with Japanese speakers easily.
 you can just speack your native languages (English)
 you don’t need to spend time to use a dictionary to translate your language.
 
+**Dataset** 
+https://nlp.stanford.edu/projects/jesc/index.html
+
+this dataset is already used sentencepiece.
+
+
 # Neural Machine Translation
 
 I am using seq2seq model which is usually usu for machine translation, speech recognition and text summarization.
@@ -217,80 +223,16 @@ In this project I used a LSTM.
 
 ![Untitled (14)](https://user-images.githubusercontent.com/25543738/74579881-000db680-4f53-11ea-9814-c1f0f6a43ecb.png)
 
- 
-Attention is for learning what word is need to pay attention.
+Attention is useful to predict a long sequence.
+Because RNN can't memorize a long sequence, attention is able to learn what word needs to pay attention.
+Attenton is also useful to get more accurcy.
  
 I used Global Attention with dot-based scoring for attention mechanizm
 
 [Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/pdf/1508.04025.pdf)
  
 Global attention uses only encoder output and current decoder for the current timestep.
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 
- 
-
- 
- 
-
- 
- 
- 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-**How NMT model works**
-
-As I mentioned MNT model is using teacher forcing in the train process.
-I provide a translation sentence into the encoder input, target sentence into the decoder input also target sentence into the decoder output(at timestep t is -1)
-Model already knew what is actual value which means model will learn correct sentence quickly.
-
-e.g.
-
-decoder input: <START> 調子 は どう ? →　ADD　START TOKEN 
-
-decoder output: 調子　は　どう　？ <END> →　ADD　END　TOKEN 
-
-I give the predicted output from the previous time step as the input to decoder
-The prediction will repeat until hit the <END> token or max target sequence length
-  
-
-
-
-
-
-
-**Dataset** : https://nlp.stanford.edu/projects/jesc/index.html
-
-this dataset is already used sentencepiece.
 
 
 
