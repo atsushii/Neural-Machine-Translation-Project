@@ -214,14 +214,17 @@ In this project I used a LSTM.
  
  
  **Attention Mechanism**
+
+![Untitled (14)](https://user-images.githubusercontent.com/25543738/74579881-000db680-4f53-11ea-9814-c1f0f6a43ecb.png)
+
  
 Attention is for learning what word is need to pay attention.
  
- I used Global Attention with dot-based scoring for attention mechanizm
+I used Global Attention with dot-based scoring for attention mechanizm
 
- [Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/pdf/1508.04025.pdf)
+[Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/pdf/1508.04025.pdf)
  
- Global attention uses only encoder output and current decoder for the current timestep.
+Global attention uses only encoder output and current decoder for the current timestep.
  
  
  
