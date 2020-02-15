@@ -229,9 +229,13 @@ Attenton is also useful to get more accurcy.
  
 I used Global Attention with dot-based scoring for attention mechanizm
 
-[Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/pdf/1508.04025.pdf)
- 
 Global attention uses only encoder output and current decoder for the current timestep.
+
+![Untitled (15)](https://user-images.githubusercontent.com/25543738/74581200-a496f500-4f61-11ea-825f-f9d95806bca3.png)
+
+[Effective Approaches to Attention-based Neural Machine Translation](https://arxiv.org/pdf/1508.04025.pdf)
+
+
 
 
 
