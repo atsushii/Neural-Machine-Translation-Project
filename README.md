@@ -1,4 +1,4 @@
-# voice_translation_project
+# Neural-Machine-Translation-Project
 
 
 # Overview
