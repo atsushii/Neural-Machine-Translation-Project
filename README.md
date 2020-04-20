@@ -10,10 +10,34 @@ Specifically, We must understand the detail of sentences properly when we chat w
 Deep learning is a powerful technique that can be used to solve this problem. I am using NLP for text translation.
 In this project, try to translate English sentences to Japanese speech. Users can chat with Japanese speakers easily. you can just type your native languages (English) you don’t need to spend time to use a dictionary to translate your language.
 
-**Dataset** 
-https://nlp.stanford.edu/projects/jesc/index.html
+# Installation
 
-This dataset is already used sentencepiece.
+**Clone**
+
+・Clone this repo to your local machine using: https://github.com/atsushii/Neural-Machine-Translation-Project.git
+
+**Setup**
+
+・Pull docker image from docker hub.
+```
+docker pull atsushiiii/workflow1-self-contained:latest
+```
+
+# Run
+
+・Run docker image.
+* 
+```
+docker run -d -p 5000:5000 [IMAGE]:[TAG]
+
+curl -d '{"input":"[English]"}' -H "Content-Type: application/json" -X GET http://0.0.0.0:5000/translate
+```
+
+# Stop
+```
+docker kill [CONTAINER ID]
+```
+
 
 # Neural Machine Translation
 
@@ -21,6 +45,11 @@ I am using the seq2seq model which is usually usu for machine translation, speec
 NMT can translate language to language.
 
 NMT is using teacher forcing in the training process.
+
+
+**Dataset** 
+https://nlp.stanford.edu/projects/jesc/index.html
+
 
 # Architecture
 
