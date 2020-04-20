@@ -15,7 +15,7 @@ class Validation():
 
         for i in self.data["input"].split():
 
-            if not i.strip() in self.token.word_index:
+            if not i.strip().lower() in self.token.word_index:
                 return False
 
         return True
