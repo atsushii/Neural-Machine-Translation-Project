@@ -10,7 +10,45 @@ Specifically, We must understand the detail of sentences properly when we chat w
 Deep learning is a powerful technique that can be used to solve this problem. I am using NLP for text translation.
 In this project, try to translate English sentences to Japanese speech. Users can chat with Japanese speakers easily. you can just type your native languages (English) you don’t need to spend time to use a dictionary to translate your language.
 
+# USE
+You can try an API
+
+**URL**
+
+<http://3.134.69.63/translate
+
+**Method**
+
+<The request type>
+
+```
+GET
+```
+**Required**
+
+{
+    input: [English]
+}
+
+* must send request as a json
+
+**Success Response**
+
+{
+    "English": "[English]",
+    "Japanese": "[Japanese]",
+    "status": 200
+}
+
+**Error Response**
+
+{
+    "response": "Bad request",
+    "status": 400
+}
+
 # Installation
+if you want to try on your local env, follow the below methods.
 
 **Clone**
 
