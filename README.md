@@ -8,10 +8,10 @@ Nowadays there are more than 6000 spoken languages in the world. We can't unders
 Specifically, We must understand the detail of sentences properly when we chat with other people Also we know that learning different languages are needed a lot of time.
 
 Deep learning is a powerful technique that can be used to solve this problem. I am using NLP for text translation.
-In this project, try to translate English sentences to Japanese speech. Users can chat with Japanese speakers easily. you can just type your native languages (English) you don’t need to spend time to use a dictionary to translate your language.
+In this project, try to translate English sentences to Japanese sentences.
 
 # USE
-You can try an API
+You can try as API
 
 **URL**
 
